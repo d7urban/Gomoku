@@ -57,7 +57,7 @@ def timerFired(data):
     # print(data.d.text,' ',data.d.textPos)
     if not data.s.isOver and data.s.chooseOppo:
         data.drawIns.onTimerFired()
-    if not data.s.isOver and data.s.isChooseDiffcult:
+    if not data.s.isOver and data.s.isChooseDifficult:
         data.drawDiff.onTimerFired()
     if not data.s.isOver and data.s.chooseColor:
         data.drawColor.onTimerFired()
@@ -68,7 +68,7 @@ def redrawAll(canvas, data):
         data.s.drawEverything()
     if not data.s.isOver and data.s.chooseOppo:
         data.drawIns.drawChooseOppo(canvas)
-    if not data.s.isOver and data.s.isChooseDiffcult:
+    if not data.s.isOver and data.s.isChooseDifficult:
         data.drawDiff.drawChooseDiff(canvas)
     if not data.s.isOver and data.s.chooseColor:
         data.drawColor.drawChooseColor(canvas)
